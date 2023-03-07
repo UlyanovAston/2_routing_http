@@ -1,0 +1,32 @@
+first_method:
+    path: /first
+    controller: App\Controller\TestsController::first
+    methods: [ GET ]
+
+second_method:
+    path: /second/{param}
+    controller: App\Controller\TestsController::second
+    methods: [ GET ]
+
+third_method:
+    path: /third/{digit}
+    controller: App\Controller\TestsController::third
+    methods: [ GET ]
+
+fourth_method:
+    path: /fourth/{param}
+    controller: App\Controller\TestsController::fourth
+    methods: [ GET ]
+    defaults:
+        param: 'hello'
+        skipException: true
+
+fifth_method:
+    path: /fifth
+    controller: App\Controller\TestsController::fifth
+    methods: [ GET ]
+
+sixth_method:
+    path: /sixth
+    controller: App\Controller\TestsController::sixth
+    methods: [ POST ]

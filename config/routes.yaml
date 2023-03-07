@@ -1,0 +1,4 @@
+tests:
+    resource: "routing/tests.yml"
+    prefix: /tests
+    name_prefix: 'tests.'
